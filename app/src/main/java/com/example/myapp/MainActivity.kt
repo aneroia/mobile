@@ -9,9 +9,5 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun next_page(view: View) {
-
-    }
-
 
 }

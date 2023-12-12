@@ -16,14 +16,14 @@
         android:text="Представься и введи свой баланс"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintBottom_toTopOf="@+id/usernameEditText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView"
         android:layout_width="267dp"
         android:layout_height="69dp"
         android:layout_marginTop="60dp"
@@ -38,45 +38,48 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="210dp"
+        android:id="@+id/usernameEditText"
+        android:layout_width="0dp"
         android:layout_height="45dp"
         android:layout_marginTop="292dp"
         android:background="#A7A5F4"
         android:ems="10"
         android:inputType="text"
-        android:text="Имя"
+        android:hint="Имя"
         app:layout_constraintBaseline_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.75" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
-        android:layout_width="210dp"
+        android:id="@+id/balanceEditText"
+        android:layout_width="0dp"
         android:layout_height="45dp"
         android:layout_marginBottom="20dp"
         android:background="#A7A5F4"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:text="Баланс"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:hint="Баланс"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.986" />
+        app:layout_constraintVertical_bias="0.986"
+        app:layout_constraintWidth_percent="0.75" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/startButton"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="428dp"
         android:text="ПРОДОЛЖИТЬ"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
