@@ -14,6 +14,11 @@ class SecondActivity : AppCompatActivity() {
         val balance = intent.getFloatExtra("walletAmount", 0f)
 
         val userDataTextView = findViewById<TextView>(R.id.userDataTextView)
-        userDataTextView.text = "Имя пользователя: $username\nСумма кошелька: $balance"
+        val balanceTextView = findViewById<TextView>(R.id.balanceTextView)
+        userDataTextView.text = "Имя пользователя: $username"
+        balanceTextView.text = "Сумма кошелька: $balance"
+
     }
+
+    
 }

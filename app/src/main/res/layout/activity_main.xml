@@ -9,12 +9,12 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="412dp"
-        android:layout_height="444dp"
+        android:layout_width="420dp"
+        android:layout_height="366dp"
         android:layout_marginTop="4dp"
         android:background="#fefae0"
         app:layout_constraintTop_toTopOf="@+id/textView"
-        tools:layout_editor_absoluteX="-1dp" />
+        tools:layout_editor_absoluteX="-7dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -87,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="#e3d7af"
-        android:text="ПРОДОЛЖИТЬ"
+        android:text="СОЗДАТЬ ПОРТФЕЛЬ"
         android:textColor="#c7734c"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

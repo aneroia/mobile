@@ -1,13 +1,86 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:background="#ccd5ae"
+    tools:context=".SecondActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="430dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="4dp"
+        android:background="#fefae0"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        tools:layout_editor_absoluteX="-7dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="267dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:focusable="auto"
+        android:fontFamily="@font/shrikhand"
+        android:text="InvestMe"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#c7734c"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/userDataTextView"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="112dp"
+        android:focusable="auto"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#5E3724"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/balanceTextView"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:focusable="auto"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#5E3724"
+        app:layout_constraintBottom_toTopOf="@+id/userDataTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp" />
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#e3d7af"
+        android:text="ДОБАВИТЬ АКЦИЮ"
+        android:textColor="#c7734c"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userDataTextView"
+        tools:layout_editor_absoluteX="115dp" />
 
-</LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutStocks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
