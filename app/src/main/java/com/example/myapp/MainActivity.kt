@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
     private fun saveUserDataAndNavigateToSecondActivity() {
         val userName = userNameEditText.text.toString()
 
-
         if (userName.isNotEmpty()) {
             val intent = Intent(this, SecondActivity::class.java).apply {
                 putExtra("userName", userName)
