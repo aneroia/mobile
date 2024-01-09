@@ -17,15 +17,15 @@
         tools:layout_editor_absoluteX="0dp" />
 
     <Button
-        android:id="@+id/startButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/updateButton"
+        android:layout_width="223dp"
+        android:layout_height="46dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="#e3d7af"
         android:text="ОБНОВИТЬ БАЛАНС"
         android:textColor="#c7734c"
-        android:textStyle="bold"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
