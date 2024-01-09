@@ -9,31 +9,41 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="416dp"
-        android:layout_height="194dp"
+        android:layout_width="413dp"
+        android:layout_height="150dp"
         android:layout_marginTop="4dp"
         android:background="#fefae0"
         app:layout_constraintTop_toTopOf="@+id/textView"
-        tools:layout_editor_absoluteX="-4dp" />
+        tools:layout_editor_absoluteX="0dp" />
+
 
     <View
         android:id="@+id/shareview1"
         android:layout_width="420dp"
-        android:layout_height="114dp"
-        android:layout_marginTop="208dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="20dp"
         android:background="#fefae0"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        tools:layout_editor_absoluteX="-5dp" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <View
         android:id="@+id/shareview2"
         android:layout_width="420dp"
-        android:layout_height="114dp"
-        android:layout_marginTop="332dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="20dp"
         android:background="#fefae0"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        tools:layout_editor_absoluteX="-7dp" />
+        app:layout_constraintTop_toBottomOf="@+id/shareview1"
+        tools:layout_editor_absoluteX="-5dp" />
+
+    <View
+        android:id="@+id/shareview3"
+        android:layout_width="420dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="20dp"
+        android:background="#fefae0"
+        app:layout_constraintTop_toBottomOf="@+id/shareview2"
+        tools:layout_editor_absoluteX="-5dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -86,11 +96,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#e3d7af"
-        android:text="ДОБАВИТЬ АКЦИЮ"
+        android:text="ДОБАВИТЬ"
         android:textColor="#c7734c"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="252dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="217dp" />
 
     <LinearLayout
         android:id="@+id/layoutStocks"
@@ -99,28 +109,92 @@
         android:orientation="vertical" />
 
     <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:paddingStart="10dp"
+        android:id="@+id/share1name"
+        android:layout_width="235dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
         android:background="#e2e5c3"
         android:ems="10"
-        android:inputType="text"
         android:hint="Акция"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="227dp" />
+        android:inputType="text"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shareview1" />
 
     <EditText
         android:id="@+id/share1summ"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:ems="10"
+        android:layout_width="235dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="5dp"
         android:background="#e2e5c3"
-        android:paddingStart="10dp"
-        android:hint="Баланс"
+        android:ems="10"
+        android:hint="Сумма"
         android:inputType="number"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="279dp" />
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/share1name" />
 
+    <EditText
+        android:id="@+id/share2name"
+        android:layout_width="235dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:background="#e2e5c3"
+        android:ems="10"
+        android:hint="Акция"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shareview2" />
 
+    <EditText
+        android:id="@+id/share2summ"
+        android:layout_width="235dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="5dp"
+        android:background="#e2e5c3"
+        android:ems="10"
+        android:hint="Сумма"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/share2name" />
+
+    <EditText
+        android:id="@+id/share3name"
+        android:layout_width="235dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:background="#e2e5c3"
+        android:ems="10"
+        android:hint="Акция"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shareview3" />
+
+    <EditText
+        android:id="@+id/share3summ"
+        android:layout_width="235dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="5dp"
+        android:background="#e2e5c3"
+        android:ems="10"
+        android:hint="Сумма"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/share3name" />
 </androidx.constraintlayout.widget.ConstraintLayout>
