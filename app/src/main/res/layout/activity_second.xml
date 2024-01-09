@@ -91,16 +91,6 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-    <Button
-        android:id="@+id/btnAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#e3d7af"
-        android:text="ДОБАВИТЬ"
-        android:textColor="#c7734c"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="217dp" />
 
     <LinearLayout
         android:id="@+id/layoutStocks"
@@ -119,7 +109,7 @@
         android:inputType="text"
         android:paddingStart="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/shareview1" />
 
@@ -134,9 +124,28 @@
         android:inputType="number"
         android:paddingStart="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/share1name" />
+
+    <TextView
+        android:id="@+id/firstInvest"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:focusable="auto"
+        android:fontFamily="@font/shrikhand"
+        android:text="1-st\ninvestment"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#c7734c"
+        app:layout_constraintBottom_toBottomOf="@+id/shareview1"
+        app:layout_constraintEnd_toEndOf="@+id/shareview1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shareview1"
+         />
 
     <EditText
         android:id="@+id/share2name"
@@ -149,7 +158,7 @@
         android:inputType="text"
         android:paddingStart="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/shareview2" />
 
@@ -164,9 +173,28 @@
         android:inputType="number"
         android:paddingStart="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/share2name" />
+
+    <TextView
+        android:id="@+id/secondInvest"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:focusable="auto"
+        android:fontFamily="@font/shrikhand"
+        android:text="2-nd\ninvestment"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#c7734c"
+        app:layout_constraintBottom_toBottomOf="@+id/shareview2"
+        app:layout_constraintEnd_toEndOf="@+id/shareview2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shareview2"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/share3name"
@@ -179,7 +207,7 @@
         android:inputType="text"
         android:paddingStart="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/shareview3" />
 
@@ -194,7 +222,28 @@
         android:inputType="number"
         android:paddingStart="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/share3name" />
+
+    <TextView
+        android:id="@+id/thirdInvest"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:focusable="auto"
+        android:fontFamily="@font/shrikhand"
+        android:text="3-rd\ninvestment"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#c7734c"
+        app:layout_constraintBottom_toBottomOf="@+id/shareview3"
+        app:layout_constraintEnd_toEndOf="@+id/shareview3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shareview3"
+        app:layout_constraintVertical_bias="1.0" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
