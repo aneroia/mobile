@@ -33,6 +33,4 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Проверьте правильность заполнения всех полей", Toast.LENGTH_SHORT).show()
         }
     }
-
-
 }

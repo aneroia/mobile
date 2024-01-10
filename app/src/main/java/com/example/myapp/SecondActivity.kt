@@ -36,6 +36,5 @@ class SecondActivity : AppCompatActivity() {
             balanceTextView.text = "Сумма кошелька: $sum"
 
         }
-
     }
 }
